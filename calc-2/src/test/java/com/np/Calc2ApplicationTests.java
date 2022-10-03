@@ -36,7 +36,7 @@ public class Calc2ApplicationTests {
 		books.add(b3);
 		when(bookRepo.findAll()).thenReturn(books);
 		List<Book> result = bookService.getAllBooks();
-		
+	//change	
 		Assertions.assertNotEquals(null, result);
 		Assertions.assertTrue(result.get(0).getName().endsWith("-b"));
 		Assertions.assertEquals("Learn Java-b", result.get(0).getName());
